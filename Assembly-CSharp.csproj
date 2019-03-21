@@ -60,9 +60,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\moving.cs" />
     <Compile Include="Assets\Scripts\ObstacleManager.cs" />
     <Compile Include="Assets\Scripts\ObstacleSpawner.cs" />
+    <None Include="Assets\Medieval_pixel_art_asset_FREE\pixel_snapping_README.txt" />
     <Reference Include="Unity.2D.Animation.Runtime">
       <HintPath>E:/Unity/knees2/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
     </Reference>
