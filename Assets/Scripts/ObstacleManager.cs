@@ -7,16 +7,16 @@ public class ObstacleManager : MonoBehaviour
     public float minSpeed = 2;
     public float maxSpeed = 5;
 
-    private Rigidbody2D rb;
+    public float myDamage = 1;
+
+    private Rigidbody rb;
     
   
     void Start()
-    {
-        //----TODO add random starting position
-        rb = GetComponent<Rigidbody2D>();
+    {      
+        rb = GetComponent<Rigidbody>();
         float speedX = -Random.Range(minSpeed,maxSpeed);
-        rb.velocity = new Vector3(speedX, 0, 0);
-             
+        rb.velocity = new Vector3(speedX, 0, 0);      
     }
 
 
@@ -24,4 +24,9 @@ public class ObstacleManager : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void OnCollisionEnter(Collision col) {
+        Debug.Log("I COLLIDED !");
+        GameManager.instance.DecreasePlayerHealth(myDamage);
+        Destroy(gameObject);
+    }
 }
