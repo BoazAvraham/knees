@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     private float vertExtent, horzExtent;
 
     public static GameManager instance=null;
-    // Start is called before the first frame update
-    void Start()
+
+    public float health;
+    public Text gameOverText;
+    
+    void Awake()
     {
         if (instance == null)
             instance = this;
@@ -19,12 +23,31 @@ public class GameManager : MonoBehaviour
         horzExtent = vertExtent * Screen.width / Screen.height;
     }
 
+    void Start() 
+    {
+        gameOverText.enabled = false;
+    }
+
 
     public float getVertExtent() { return vertExtent; }
     public float getHorzExtent() { return horzExtent; }
-    // Update is called once per frame
-    void Update()
-    {
+    
+    
+    public void DecreasePlayerHealth(float damage) {
+        health -= damage;
+        Debug.Log(health);
+        if (health == 0)
+            GameOver();
+    }
+
+    private void GameOver() {
+        gameOverText.enabled = true;
         
+        gameOverText.text = "Your knees were destroyed dude";
+
+        //disable player and spwaning obstacles
+        GameObject.FindWithTag("Player").SetActive(false);
+        GetComponent<ObstacleSpawner>().StopAllCoroutines();
+
     }
 }

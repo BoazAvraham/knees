@@ -7,6 +7,8 @@ public class ObstacleManager : MonoBehaviour
     public float minSpeed = 2;
     public float maxSpeed = 5;
 
+    public float myDamage = 1;
+
     private Rigidbody rb;
     
   
@@ -24,6 +26,7 @@ public class ObstacleManager : MonoBehaviour
 
     void OnCollisionEnter(Collision col) {
         Debug.Log("I COLLIDED !");
+        GameManager.instance.DecreasePlayerHealth(myDamage);
         Destroy(gameObject);
     }
 }
