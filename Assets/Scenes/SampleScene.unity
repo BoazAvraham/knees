@@ -721,8 +721,6 @@ GameObject:
   - component: {fileID: 1070930502}
   - component: {fileID: 1070930501}
   - component: {fileID: 1070930500}
-  - component: {fileID: 1070930503}
-  - component: {fileID: 1070930504}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -794,33 +792,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1070930503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070930499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71095ac7370f88744bfed2c033d0551c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obstacles:
-  - {fileID: 5283512336931011211, guid: e895dc28289c9134bb7cce0179614a36, type: 3}
-  timeBetweenSpawns: 3
---- !u!114 &1070930504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070930499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ae33dd6a8a569c43a015f474f10ed4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1122021756
 GameObject:
   m_ObjectHideFlags: 0
@@ -8672,6 +8643,12 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.737
       objectReference: {fileID: 0}
+    - target: {fileID: 1894241937104543134, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 3ee3cc95e0c183e42b79c1eb7af6befd,
+        type: 3}
     - target: {fileID: 291412843, guid: 0086d9f07f1d2b2489a72fcb242d9402, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -8681,43 +8658,13 @@ PrefabInstance:
       propertyPath: speed
       value: 10
       objectReference: {fileID: 0}
-    - target: {fileID: 1894241937104543134, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 3ee3cc95e0c183e42b79c1eb7af6befd,
-        type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1894241936250387078, guid: 0086d9f07f1d2b2489a72fcb242d9402, type: 3}
+    - {fileID: 1894241936250387081, guid: 0086d9f07f1d2b2489a72fcb242d9402, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 0086d9f07f1d2b2489a72fcb242d9402, type: 3}
---- !u!1 &1894241936250387076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1894241937104543128, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-    type: 3}
-  m_PrefabInstance: {fileID: 1894241936250387075}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1894241936250387077 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1894241937104543133, guid: 0086d9f07f1d2b2489a72fcb242d9402,
     type: 3}
   m_PrefabInstance: {fileID: 1894241936250387075}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1894241936250387078
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894241936250387076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57c008f954fe54a8bb972de1018a2cb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_RootBone: {fileID: 1914519159}
-  m_BoneTransforms:
-  - {fileID: 1914519159}
-  - {fileID: 1122021757}
-  - {fileID: 2087565057}
-  m_Bounds:
-    m_Center: {x: 1.6588422, y: -0.31272542, z: 0}
-    m_Extent: {x: 2.3099444, y: 0.9386165, z: 0}
