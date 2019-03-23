@@ -60,6 +60,15 @@
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <None Include="Assets\Unity Technologies\2D Animation\Samples\Fonts\LICENSE.txt" />
      <None Include="Assets\Medieval_pixel_art_asset_FREE\pixel_snapping_README.txt" />
+ <Reference Include="Unity.2D.Animation.Runtime">
+ <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.2D.Animation.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.PixelPerfect.Editor">
+ <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.2D.PixelPerfect.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.SpriteShape.Editor">
+ <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.2D.SpriteShape.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -69,11 +78,35 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.InternalAPIEngineBridge.001">
+ <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.001.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Common.Runtime">
+ <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.2D.Common.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.SpriteShape.Runtime">
+ <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.2D.SpriteShape.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.PixelPerfect">
+ <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.2D.PixelPerfect.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Animation.Editor">
+ <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.2D.Animation.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.2D.Triangle.Runtime">
+ <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.2D.Triangle.Runtime.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.2D.Common.Editor">
+ <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.2D.Common.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
  <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.InternalAPIEditorBridge.001">
+ <HintPath>D:/UNITY/PROJECTS/Knees/Library/ScriptAssemblies/Unity.InternalAPIEditorBridge.001.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
