@@ -1,0 +1,18 @@
+To do:
+
+- Distance Time
+- Level Transition
+- Leg Animation: - Guy
+	- Jump
+	- Crouch
+	- Run
+	- idle (optional)
+- Endless Wall   -----boaz
+	- Add Fidlin Quotes
+	- Wall Crack decals
+	- indoor Windows
+- UI:
+	-Buttons (Play,scoreboard etc)
+	- Knee Headline Jumps
+	- Add Fonts to GameOver Lines 
+	- Pause Screen
