@@ -11,10 +11,14 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 move;
     private float yBound;
 
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start() {
         move = new Vector3(0, speed, 0);
         yBound = GameManager.instance.getVertExtent();
+
+        
         Debug.Log(yBound);
     }
 
@@ -24,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 movement = move * direction * Time.deltaTime;
 
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            animator.SetTrigger("dimple");
+        }
+        
         Vector3 newPos = transform.position + movement;
         if (newPos.y < yBound && newPos.y > -yBound)
             transform.position = newPos;
