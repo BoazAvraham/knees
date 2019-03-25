@@ -11,12 +11,14 @@ public class GameManager : MonoBehaviour
 
     public float health;
     public Text gameOverText;
+    public Text scoreText;
+    public Text healthText;
 
     public GameObject background;
-
     public float screenspeed = 10;
 
     private float vertExtent, horzExtent;
+    private float score;
     private List<GameObject> walls;
     private Vector3 wallMovement;
     private Vector3 wallWidth;
@@ -34,7 +36,10 @@ public class GameManager : MonoBehaviour
 
     void Start() 
     {
+        //disable gameover text
         gameOverText.enabled = false;
+
+        //initialize walls
         walls = new List<GameObject>();
 
         wallMovement = new Vector3(screenspeed,0,0);
@@ -42,6 +47,11 @@ public class GameManager : MonoBehaviour
         wallWidth = background.transform.GetChild(1).position;
 
         createWallPool();
+
+        //score - distance ran
+        score = 0;
+        scoreText.text = "Score : 0";
+
         Debug.Log("num of walls: " + walls.Count);
         Debug.Log("wall width:"+wallWidth);
     }
@@ -56,7 +66,7 @@ public class GameManager : MonoBehaviour
         walls.Add(Instantiate(background,pos,Quaternion.identity));
     }
 
-    void Update() {
+    void FixedUpdate() {
         //move walls
         foreach (GameObject o in walls) {
             o.transform.position -= wallMovement * Time.deltaTime;
@@ -68,9 +78,11 @@ public class GameManager : MonoBehaviour
             }
         }
 
-
-
+        score+= wallMovement.x * Time.deltaTime;
+        scoreText.text = "Score :" +(int)score;
     }
+
+
 
     public float getVertExtent() { return vertExtent; }
     public float getHorzExtent() { return horzExtent; }
