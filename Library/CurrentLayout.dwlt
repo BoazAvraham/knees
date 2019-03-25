@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
+    x: 1920
     y: 43
     width: 1920
     height: 997
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 4}
-  m_MinSize: {x: 950, y: 548}
+  m_MinSize: {x: 950, y: 524}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -42,8 +42,8 @@ MonoBehaviour:
     y: 0
     width: 395
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -95,7 +95,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 548}
+  m_MinSize: {x: 950, y: 524}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
 MonoBehaviour:
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 611, y: 498}
-  m_MaxSize: {x: 18006, y: 14048}
+  m_MinSize: {x: 613, y: 474}
+  m_MaxSize: {x: 18008, y: 14024}
   vertical: 0
-  controlID: 32
+  controlID: 77
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,10 +187,10 @@ MonoBehaviour:
     y: 0
     width: 1099
     height: 947
-  m_MinSize: {x: 102, y: 224}
-  m_MaxSize: {x: 4002, y: 8024}
+  m_MinSize: {x: 102, y: 248}
+  m_MaxSize: {x: 4002, y: 8048}
   vertical: 1
-  controlID: 92
+  controlID: 119
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,8 +210,8 @@ MonoBehaviour:
     y: 0
     width: 1099
     height: 600
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 124}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 20}
@@ -269,10 +269,10 @@ MonoBehaviour:
     y: 0
     width: 426
     height: 947
-  m_MinSize: {x: 234, y: 498}
-  m_MaxSize: {x: 10004, y: 14048}
+  m_MinSize: {x: 234, y: 474}
+  m_MaxSize: {x: 10004, y: 14024}
   vertical: 1
-  controlID: 33
+  controlID: 78
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -346,7 +346,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 1920
     y: 73
     width: 1097
     height: 580
@@ -357,9 +357,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.22751914, y: -2.4666355, z: -0.07858536}
+    m_Target: {x: 15.151043, y: 3.9857879, z: -0.553218}
     speed: 2
-    m_Value: {x: 0.22751914, y: -2.4666355, z: -0.07858536}
+    m_Value: {x: 15.151043, y: 3.9857879, z: -0.553218}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -391,9 +391,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: -1}
   m_Size:
-    m_Target: 18.191406
+    m_Target: 138.31361
     speed: 2
-    m_Value: 18.191406
+    m_Value: 138.31361
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -457,7 +457,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1525
+    x: 3445
     y: 73
     width: 393
     height: 927
@@ -491,14 +491,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 1920
     y: 73
     width: 1097
-    height: 592
+    height: 580
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ResetOnNextRepaint: 0
-  m_SelectedAssetPath: Assets/Sprites/UI/My Knees.psd
-  m_SelectedSpriteRectGUID: 25d50945d36b0f54c8cb95d7641eafce
+  m_SelectedAssetPath: Assets/Sprites/LEG/leg3.psd
+  m_SelectedSpriteRectGUID: 3a99dd32967bc17449e06bbd2948abf7
   m_LastUsedModuleTypeName: UnityEditor.Experimental.U2D.Animation.SkinningModule
 --- !u!114 &18
 MonoBehaviour:
@@ -521,14 +521,14 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 1920
     y: 673
     width: 1097
     height: 327
   m_PersistentViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -1074
+  m_LastSelectedObjectID: -1086
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -550,7 +550,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 1920
     y: 673
     width: 1097
     height: 327
@@ -630,7 +630,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 1920
     y: 73
     width: 1097
     height: 580
@@ -656,7 +656,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 1920
     y: 73
     width: 1097
     height: 580
@@ -682,7 +682,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 0
+    x: 1920
     y: 673
     width: 1097
     height: 327
@@ -780,7 +780,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1099
+    x: 3019
     y: 73
     width: 422
     height: 350
@@ -788,9 +788,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 942e0000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 10f6ffff3cf6ffff62f6ffffb2fbffffb6fbffffcefbffffd0fbffff
+      m_ExpandedIDs: 52ddffffc8fbffffd0fbffff1a360000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -835,7 +835,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1099
+    x: 3019
     y: 443
     width: 422
     height: 557
@@ -852,20 +852,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs
   m_ViewMode: 1
   m_StartGridSize: 58
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs
   m_LastFoldersGridSize: 58
-  m_LastProjectPath: E:\Unity\knees2
+  m_LastProjectPath: D:\UNITY\PROJECTS\Knees
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d2330000
-    m_LastClickedID: 13266
-    m_ExpandedIDs: 00000000322900000a2a00005a2d0000da2d0000542f0000e03000008a3400009c35000000ca9a3b
+    m_SelectedIDs: a8300000
+    m_LastClickedID: 12456
+    m_ExpandedIDs: 00000000342900000c2a00005c2d0000dc2d0000e23000008e340000a035000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -893,7 +893,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000322900000a2a00005a2d0000da2d0000542f0000e03000008a3400009c350000
+    m_ExpandedIDs: 00000000342900000c2a00005c2d0000dc2d0000e23000008e340000a0350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
