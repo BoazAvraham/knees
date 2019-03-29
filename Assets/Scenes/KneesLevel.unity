@@ -573,6 +573,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knees
       objectReference: {fileID: 0}
+    - target: {fileID: 2388970827098873285, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1894241937104543133, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -646,7 +651,7 @@ PrefabInstance:
     - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
@@ -761,6 +766,11 @@ PrefabInstance:
     - target: {fileID: 1444325910, guid: 0086d9f07f1d2b2489a72fcb242d9402, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.0000007052315
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894241937104543134, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0086d9f07f1d2b2489a72fcb242d9402, type: 3}

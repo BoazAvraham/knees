@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
                 Vector3 pos = o.transform.position;
                 pos += 4 * wallWidth;
                 o.transform.position = pos;
+                o.GetComponent<Wall>().RandomizeText();
             }
         }
 
