@@ -3,10 +3,9 @@ To do:
 - Distance Time
 - Level Transition
 - Leg Animation: - Guy
-	- Jump
-	- Crouch
-	- Run
-	- idle (optional)
+	- Jump - Done
+	- Crouch - 
+	- Run - Done
 - Endless Wall   -----boaz
 	- Add Fidlin Quotes
 	- Wall Crack decals

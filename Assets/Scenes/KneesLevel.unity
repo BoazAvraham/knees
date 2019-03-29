@@ -640,9 +640,24 @@ PrefabInstance:
       objectReference: {fileID: 1755639346}
     - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
-      propertyPath: m_Enabled
+      propertyPath: m_Animations.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: b32d8dd7039085a4a8fc9576479bff68, type: 2}
+    - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: 2a34ca823e280a14e82fa932b42179a1, type: 2}
     - target: {fileID: 612535707, guid: 0086d9f07f1d2b2489a72fcb242d9402, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.6037432
