@@ -3653,7 +3653,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b80932c96f660c44895e754710463b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  graffiti: sample text
+  graffiti:
+  - General kanobi
+  - Kaki
+  - My KnEeS !
+  - nik nik nik
+  - HAKUNA MATATA
 --- !u!1 &6122028675994682838
 GameObject:
   m_ObjectHideFlags: 0

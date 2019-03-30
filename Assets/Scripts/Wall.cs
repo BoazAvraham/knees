@@ -5,12 +5,12 @@ using UnityEngine;
 public class Wall : MonoBehaviour
 {
 
-    public string graffiti="sample text";
+    public string [] graffiti;
 
     //Maybe make these public
     float maxX = 12;
     float maxY = 3;
-    float angle = 80;
+    float angle = 30;
 
     private string myText;
     private Transform textChild;
@@ -26,8 +26,8 @@ public class Wall : MonoBehaviour
 
         Vector3 euler = new Vector3(0, 0, Random.Range(-angle, angle));
 
-        textChild.position = newPos;
-        textChild.eulerAngles = euler;
+        textChild.localPosition = newPos;
+        textChild.localEulerAngles = euler;
         textChild.GetComponent<TextMesh>().text = myText;
     }
 }
