@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876203762205603046}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.54, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0884, y: 1.0884, z: 1.0884}
   m_Children: []
   m_Father: {fileID: 1876203763839837288}
@@ -3589,7 +3589,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -3
+  m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -3630,6 +3630,7 @@ Transform:
   - {fileID: 1876203762205603045}
   - {fileID: 1157931244458612111}
   - {fileID: 2173611201455320921}
+  - {fileID: 704474699251672778}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3663,7 +3664,6 @@ MonoBehaviour:
   - My KnEeS !
   - nik nik nik
   - HAKUNA MATATA
-<<<<<<< HEAD
 --- !u!1 &3023035253765718780
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,7 +3680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &704474699251672778
 Transform:
   m_ObjectHideFlags: 0
@@ -3743,8 +3743,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-=======
->>>>>>> 949e9eb9b4941177ebc643ed7ab45ab429ad360f
 --- !u!1 &6122028675994682838
 GameObject:
   m_ObjectHideFlags: 0
@@ -3867,4 +3865,4 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: b8936bbe355828e459a1b0e8dab38aa2, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4278190123
+    rgba: 4285229932
