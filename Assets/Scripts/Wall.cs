@@ -8,7 +8,7 @@ public class Wall : MonoBehaviour
     public string [] graffiti;
 
     //Maybe make these public
-    float maxX = 12;
+    float maxX = 18;
     float maxY = 3;
     float angle = 30;
 
@@ -20,7 +20,7 @@ public class Wall : MonoBehaviour
     }
 
     public void RandomizeText() {
-        myText = "WOOT SUCCESS !!!!";
+        myText = graffiti[Random.Range(0,graffiti.Length)];
         Vector3 newPos = new Vector3(Random.Range(-maxX, maxX),
                                    Random.Range(-maxY, maxY), 0);
 

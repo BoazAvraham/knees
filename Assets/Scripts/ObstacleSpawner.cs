@@ -18,6 +18,7 @@ public class ObstacleSpawner : MonoBehaviour
     {
         numOfObstacles = obstacles.Length;
         StartCoroutine(SpawnObstacle());
+        rightBoarder = GameManager.instance.getHorzExtent();
     }
 
     IEnumerator SpawnObstacle() {

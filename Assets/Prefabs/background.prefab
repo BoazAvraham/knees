@@ -3589,7 +3589,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -3680,7 +3680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &704474699251672778
 Transform:
   m_ObjectHideFlags: 0
@@ -3865,4 +3865,4 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: b8936bbe355828e459a1b0e8dab38aa2, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4285229932
+    rgba: 4278190123

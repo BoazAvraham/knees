@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
             //if wall rightboarder out of camera vision
             if (o.transform.position.x+wallWidth.x < -horzExtent) {
                 Vector3 pos = o.transform.position;
-                pos += 4 * wallWidth;
+                pos += 6 * wallWidth;
                 o.transform.position = pos;
                 o.GetComponent<Wall>().RandomizeText();
             }
@@ -84,8 +84,13 @@ public class GameManager : MonoBehaviour
     }
 
 
-
+    /**
+     * Return the camera X limit 
+     */
     public float getVertExtent() { return vertExtent; }
+    /**
+     * Return the camera Y limit 
+     */
     public float getHorzExtent() { return horzExtent; }
     
     

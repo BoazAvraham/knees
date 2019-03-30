@@ -25,7 +25,6 @@ public class ObstacleManager : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision col) {
-        Debug.Log("I COLLIDED !");
         GameManager.instance.DecreasePlayerHealth(myDamage);
         Destroy(gameObject);
     }
