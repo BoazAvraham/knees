@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
         }
 
         score+= wallMovement.x * Time.deltaTime;
-        scoreText.text = "Score :" +(int)score;
+        scoreText.text = "SCORE  -  " +(int)score;
     }
 
 
