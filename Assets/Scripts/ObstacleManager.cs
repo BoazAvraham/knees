@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class ObstacleManager : MonoBehaviour
 {
-    public float minSpeed = 2;
-    public float maxSpeed = 5;
+    public float minSpeed = 10;
+    public float maxSpeed = 10;
 
     public float myDamage = 1;
 

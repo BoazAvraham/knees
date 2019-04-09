@@ -1357,20 +1357,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knees
       objectReference: {fileID: 0}
-    - target: {fileID: 2388970827098873285, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1894241937104543133, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.399397
+      value: -15.3994
       objectReference: {fileID: 0}
     - target: {fileID: 1894241937104543133, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5547782
+      value: -0.71
       objectReference: {fileID: 0}
     - target: {fileID: 1894241937104543133, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
@@ -1417,41 +1412,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 25.403002
       objectReference: {fileID: 0}
-    - target: {fileID: 1894241936250387081, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1894241936250387081, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: animator
-      value: 
-      objectReference: {fileID: 1755639346}
-    - target: {fileID: 1894241936250387081, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: slidePoint
-      value: 
-      objectReference: {fileID: 31279217}
-    - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: m_Animations.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: m_Animation
-      value: 
-      objectReference: {fileID: 7400000, guid: b32d8dd7039085a4a8fc9576479bff68, type: 2}
-    - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: m_Animations.Array.data[0]
-      value: 
-      objectReference: {fileID: 7400000, guid: 2a34ca823e280a14e82fa932b42179a1, type: 2}
     - target: {fileID: 612535707, guid: 0086d9f07f1d2b2489a72fcb242d9402, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.6037432
@@ -1560,6 +1520,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894241936250387081, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1894241936250387081, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1755639346}
+    - target: {fileID: 1894241936250387081, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: slidePoint
+      value: 
+      objectReference: {fileID: 31279217}
+    - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Animation
+      value: 
+      objectReference: {fileID: 7400000, guid: b32d8dd7039085a4a8fc9576479bff68, type: 2}
+    - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Animations.Array.data[0]
+      value: 
+      objectReference: {fileID: 7400000, guid: 2a34ca823e280a14e82fa932b42179a1, type: 2}
+    - target: {fileID: 2388970827098873285, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402, type: 3}
