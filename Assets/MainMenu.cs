@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ButtonsFunctions : MonoBehaviour
+public class MainMenu : MonoBehaviour
 {
     private int levelToLoad;
     
