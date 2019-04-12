@@ -106,7 +106,6 @@ GameObject:
   - component: {fileID: 4862623158728498049}
   - component: {fileID: 1894241936250387078}
   - component: {fileID: 1894241936250387081}
-  - component: {fileID: 771719045738535846}
   - component: {fileID: 2388970827098873285}
   m_Layer: 0
   m_Name: Knees
@@ -240,21 +239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
---- !u!111 &771719045738535846
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1894241937104543128}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 9962e5d66290dd14ba73c7bf844ca012, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  animator: {fileID: 0}
+  slidePoint: {fileID: 0}
 --- !u!95 &2388970827098873285
 Animator:
   serializedVersion: 3
