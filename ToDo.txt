@@ -1,4 +1,4 @@
-To do:
+To do: Finish the game
 
 - Distance Time
 - Level Transition
