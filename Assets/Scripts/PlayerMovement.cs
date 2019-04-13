@@ -43,23 +43,44 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            animator.SetTrigger("dimple");
+            Jump();
         }
         else if(Input.GetKeyDown(KeyCode.DownArrow))
         {
-            // Distance moved = time * speed.
-            float distCovered = (Time.time - startTime) * speed;
-
-            // Fraction of journey completed = current distance divided by total distance.
-            float fracJourney = distCovered / journeyLength;
-
-            animator.SetTrigger("slide");
-            Vector3.Lerp(transform.position, slidePoint.transform.position,fracJourney);
+            Slide();
         }
 
-        Vector3 newPos = transform.position + movement;
-        if (newPos.y < yBound && newPos.y > -yBound)
-            transform.position = newPos;
 
+        /*
+         * Phone code 
+         */
+        if (Input.touchCount > 0) {
+            Touch t= Input.touches[0];
+            Vector3 touchPos=Camera.main.ScreenToWorldPoint(t.position);
+            if (touchPos.y > 0)
+                Jump();
+            else
+                Slide();
+        }
+       
+        //Vector3 newPos = transform.position + movement;
+        //if (newPos.y < yBound && newPos.y > -yBound)
+        //    transform.position = newPos;
+
+    }
+
+    void Jump() {
+        animator.SetTrigger("dimple");
+    }
+
+    void Slide() {
+        // Distance moved = time * speed.
+        float distCovered = (Time.time - startTime) * speed;
+
+        // Fraction of journey completed = current distance divided by total distance.
+        float fracJourney = distCovered / journeyLength;
+
+        animator.SetTrigger("slide");
+        Vector3.Lerp(transform.position, slidePoint.transform.position, fracJourney);
     }
 }
