@@ -25,6 +25,7 @@ public class ObstacleManager : MonoBehaviour
     }
 
     void OnCollisionEnter(Collision col) {
+        
         GameManager.instance.DecreasePlayerHealth(myDamage);
         Destroy(gameObject);
     }

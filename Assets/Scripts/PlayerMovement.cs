@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public GameObject slidePoint;
 
+    public AudioClip hitSound;
+    public AudioClip jumpSound;
 
     private float direction = 0;
     private Vector3 move;
@@ -19,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     // Total distance between the markers.
     private float journeyLength;
 
+    private AudioSource source;
 
     // Start is called before the first frame update
     void Start() {
@@ -31,7 +34,10 @@ public class PlayerMovement : MonoBehaviour
 
         // Calculate the journey length.
         journeyLength = Vector3.Distance(transform.position, slidePoint.transform.position);
-    
+
+        //audio source
+        source = GetComponent<AudioSource>();
+
         Debug.Log(yBound);
     }
 
@@ -70,6 +76,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void Jump() {
+        source.PlayOneShot(jumpSound, 0.53f);
         animator.SetTrigger("dimple");
     }
 
@@ -82,5 +89,10 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetTrigger("slide");
         Vector3.Lerp(transform.position, slidePoint.transform.position, fracJourney);
+    }
+
+    void OnCollisionEnter(Collision col)
+    {
+        source.PlayOneShot(hitSound,0.53f);
     }
 }
