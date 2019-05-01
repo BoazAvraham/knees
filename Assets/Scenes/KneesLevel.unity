@@ -539,6 +539,14 @@ MonoBehaviour:
   obstacles:
   - {fileID: 5283512336931011211, guid: 99e6a77b4b6304145a86d309bf80fcdf, type: 3}
   - {fileID: 5283512336931011211, guid: e895dc28289c9134bb7cce0179614a36, type: 3}
+  - {fileID: 5283512336931011211, guid: 1a539c77d2689b846bd931200f3f805c, type: 3}
+  - {fileID: 5283512336931011211, guid: 7fbcec95065172e44b004e38e23101b9, type: 3}
+  - {fileID: 5283512336931011211, guid: 140e5b9cc4342d0468802ffcb5a534fd, type: 3}
+  - {fileID: 5283512336931011211, guid: e240a000421ad3840a252d40d885b916, type: 3}
+  - {fileID: 5283512336931011211, guid: 13a7abed0b5a1854e9f7862071a5d7d8, type: 3}
+  - {fileID: 5283512336931011211, guid: 20c9f29895d186447bd69803c47d5f0d, type: 3}
+  - {fileID: 5283512336931011211, guid: 3a910061ca2f4f24fbe62eb9e51f5d08, type: 3}
+  - {fileID: 5283512336931011211, guid: 2eb7bd12a36928a40a0cf955a0698e97, type: 3}
   timeBetweenSpawns: 3
 --- !u!114 &1070930504
 MonoBehaviour:
@@ -1571,6 +1579,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knees
       objectReference: {fileID: 0}
+    - target: {fileID: 2388970827098873285, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1894241937104543133, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1735,6 +1748,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1894241937104543134, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1894241936250387081, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
       propertyPath: m_Enabled
@@ -1760,11 +1778,6 @@ PrefabInstance:
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 8300000, guid: 5bb3d28253156bf49ac520e233be5110, type: 3}
-    - target: {fileID: 2388970827098873285, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
       propertyPath: m_Animations.Array.size
