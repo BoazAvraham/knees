@@ -23,6 +23,10 @@ public class GameManager : MonoBehaviour
     private Vector3 wallMovement;
     private Vector3 wallWidth;
 
+    public static GameManager getInstance() {
+        return instance;
+    }
+
     void Awake()
     {
         if (instance == null)
@@ -96,6 +100,7 @@ public class GameManager : MonoBehaviour
     
     public void DecreasePlayerHealth(float damage) {
         health -= damage;
+        HealthUI.getInstance().updateHealthUI(health);
         Debug.Log(health);
         if (health == 0)
             GameOver();
