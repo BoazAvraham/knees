@@ -4163,8 +4163,6 @@ MonoBehaviour:
   - HAKUNA MATATA
   - HAKUNA MATATA
   - HAKUNA MATATA
-<<<<<<< HEAD
-=======
   - HAKUNA MATATA
   - HAKUNA MATATA
   - HAKUNA MATATA
@@ -4284,7 +4282,6 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
->>>>>>> b8b0dc64ba3ff6f7db7036127316e1f6eb25f998
 --- !u!1 &3204050851019179796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4461,21 +4458,12 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4285493221
-<<<<<<< HEAD
---- !u!222 &2598203551974286514
-CanvasRenderer:
-=======
 --- !u!1 &7492589448717422634
 GameObject:
->>>>>>> b8b0dc64ba3ff6f7db7036127316e1f6eb25f998
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
-  m_GameObject: {fileID: 7003199298703272380}
-  m_CullTransparentMesh: 0
-=======
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3898337231584848164}
@@ -4630,4 +4618,3 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
->>>>>>> b8b0dc64ba3ff6f7db7036127316e1f6eb25f998
