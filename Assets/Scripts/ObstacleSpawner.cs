@@ -23,13 +23,15 @@ public class ObstacleSpawner : MonoBehaviour
 
     IEnumerator SpawnObstacle() {
         while (true) {
+
+            yield return new WaitForSeconds(timeBetweenSpawns);
+
             int i = Random.Range(0, numOfObstacles);
             Vector3 pos = Vector3.zero;
             pos.x += rightBoarder;
             pos.y = Random.Range(-yHight, yHight);
             GameObject obst = Instantiate(obstacles[i], pos, Quaternion.identity);
 
-            yield return new WaitForSeconds(timeBetweenSpawns);
         }
     }
 

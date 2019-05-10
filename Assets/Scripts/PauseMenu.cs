@@ -44,4 +44,9 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void LoadKneesLevel() {
+        source.PlayOneShot(click, 1);
+        SceneManager.LoadScene(1);
+    }
+
 }

@@ -50,19 +50,19 @@ public class PlayerMovement : MonoBehaviour
 
         Vector3 movement = move * direction * Time.deltaTime;
 
-//#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER
+////////#if UNITY_EDITOR || UNITY_STANDALONE || UNITY_WEBPLAYER
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Jump();
-        }
-        else if(Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            Slide();
-        }
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    Jump();
+        //}
+        //else if(Input.GetKeyDown(KeyCode.DownArrow))
+        //{
+        //    Slide();
+        //}
 
 
-//#elif UNITY_IOS || UNITY_ANDROID
+//////////#elif UNITY_IOS || UNITY_ANDROID
 
         if (Input.touchCount > 0) {
             Touch touch = Input.touches[0];
@@ -75,15 +75,9 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-            //Touch t= Input.touches[0];
-            //Vector3 touchPos=Camera.main.ScreenToWorldPoint(t.position);
-            //if (touchPos.y > 0)
-            //    Jump();
-            //else
-            //    Slide();
         }
        
-//#endif
+////////#endif
 
     }
 

@@ -11,8 +11,9 @@ public class GameManager : MonoBehaviour
 
     public float health;
     public Text gameOverText;
+    public GameObject replayButton;
+    public GameObject quitButton;
     public Text scoreText;
-    public Text healthText;
 
     public GameObject background;
     public float screenspeed = 10;
@@ -108,6 +109,8 @@ public class GameManager : MonoBehaviour
 
     private void GameOver() {
         gameOverText.enabled = true;
+        replayButton.active = true;
+        quitButton.active = true;
         
         gameOverText.text = "Your knees were destroyed dude";
 
