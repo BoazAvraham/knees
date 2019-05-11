@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/UNITY/PROJECTS/Knees/build003.aab
+D:/UNITY/PROJECTS/Knees/build005.aab
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/KneesLevel.unity
@@ -123,7 +123,7 @@ b21af3632b0aaa863cfe392d5fd7a5d3 Unity.2D.SpriteShape.Runtime.dll:UnityEngine.U2
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 a318a82d5abde553e75543c7b3aba918 XiaomiSupport.dll:AppStoresSupport.AppStoreSettings
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
-79943e0be3dbfb99778dcff2275a4254 Assembly-CSharp.dll:.GameManager
+498c56afb8c7f0eee642e75659dd2858 Assembly-CSharp.dll:.GameManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.TextMeshPro.dll:TMPro.TMP_SpriteAnimator
 ab3f435bf3546b0a3ec0612e466a15ea Assembly-CSharp.dll:.ObstacleSpawner

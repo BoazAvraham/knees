@@ -109,8 +109,8 @@ public class GameManager : MonoBehaviour
 
     private void GameOver() {
         gameOverText.enabled = true;
-        replayButton.active = true;
-        quitButton.active = true;
+        replayButton.SetActive(true);
+        quitButton.SetActive(true);
         
         gameOverText.text = "Your knees were destroyed dude";
 
