@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1436338098314996727}
   - component: {fileID: 5990723290726032494}
   - component: {fileID: 252994358065880341}
-  - component: {fileID: 4528453364517817448}
+  - component: {fileID: 7368725078050273770}
   m_Layer: 0
   m_Name: Obstacle 8
   m_TagString: Untagged
@@ -113,7 +113,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &4528453364517817448
+--- !u!65 &7368725078050273770
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,5 +124,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 4.8769083, y: 1.3294046, z: 0.2}
-  m_Center: {x: -0.39345792, y: 0.8794041, z: 0}
+  m_Size: {x: 0.4, y: 0.37, z: 0.2}
+  m_Center: {x: 0, y: 0.185, z: 0}

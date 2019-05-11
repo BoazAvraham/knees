@@ -238,7 +238,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 7
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/UNITY/PROJECTS/Knees/user.keystore
+  AndroidKeystoreName: E:/Unity/Knees3/user.keystore
   AndroidKeyaliasName: myknees
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
