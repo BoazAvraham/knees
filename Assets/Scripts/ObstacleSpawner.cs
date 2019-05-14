@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class ObstacleSpawner : MonoBehaviour
 {
 
@@ -19,17 +20,20 @@ public class ObstacleSpawner : MonoBehaviour
         numOfObstacles = obstacles.Length;
         StartCoroutine(SpawnObstacle());
         rightBoarder = GameManager.instance.getHorzExtent();
+        yHight = GameManager.instance.getVertExtent();
     }
 
     IEnumerator SpawnObstacle() {
+        
         while (true) {
-
+            float[] yPoss = { -yHight, -2/3 * yHight };
             yield return new WaitForSeconds(timeBetweenSpawns);
 
             int i = Random.Range(0, numOfObstacles);
             Vector3 pos = Vector3.zero;
             pos.x += rightBoarder;
-            pos.y = Random.Range(-yHight, yHight);
+
+            pos.y = yPoss[Random.Range(0, 2)];
             GameObject obst = Instantiate(obstacles[i], pos, Quaternion.identity);
 
         }

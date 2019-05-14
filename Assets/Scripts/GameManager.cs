@@ -57,8 +57,11 @@ public class GameManager : MonoBehaviour
         score = 0;
         scoreText.text = "Score : 0";
 
-        Debug.Log("num of walls: " + walls.Count);
-        Debug.Log("wall width:"+wallWidth);
+        StartCoroutine(scoreUpdate());
+
+        HealthUI.getInstance().updateHealthUI(health);
+        //Debug.Log("num of walls: " + walls.Count);
+        //Debug.Log("wall width:"+wallWidth);
     }
 
     private void createWallPool() {
@@ -69,6 +72,15 @@ public class GameManager : MonoBehaviour
         walls.Add(Instantiate(background,pos,Quaternion.identity));
         pos -= 2 * wallWidth;
         walls.Add(Instantiate(background,pos,Quaternion.identity));
+        
+    }
+
+    IEnumerator scoreUpdate() {
+        while (true) {
+            score += wallMovement.x * Time.deltaTime;
+            scoreText.text = "SCORE  -  " + (int)score;
+            yield return new WaitForSeconds(0);
+        }
     }
 
     void FixedUpdate() {
@@ -83,9 +95,6 @@ public class GameManager : MonoBehaviour
                 o.GetComponent<Wall>().RandomizeText();
             }
         }
-
-        score+= wallMovement.x * Time.deltaTime;
-        scoreText.text = "SCORE  -  " +(int)score;
     }
 
 
@@ -108,6 +117,7 @@ public class GameManager : MonoBehaviour
     }
 
     private void GameOver() {
+        StopAllCoroutines();
         gameOverText.enabled = true;
         replayButton.SetActive(true);
         quitButton.SetActive(true);

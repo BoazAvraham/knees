@@ -762,7 +762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ae33dd6a8a569c43a015f474f10ed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 1
   gameOverText: {fileID: 1848283364}
   replayButton: {fileID: 1488991946}
   quitButton: {fileID: 1781170364}
@@ -1297,7 +1297,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -640, y: -429}
+  m_AnchoredPosition: {x: -610.5, y: -376}
   m_SizeDelta: {x: 245.9, y: 70.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1488991948
@@ -2216,6 +2216,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knees
       objectReference: {fileID: 0}
+    - target: {fileID: 2388970827098873285, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1894241937104543133, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2425,11 +2430,6 @@ PrefabInstance:
       propertyPath: jumpSound
       value: 
       objectReference: {fileID: 8300000, guid: 5bb3d28253156bf49ac520e233be5110, type: 3}
-    - target: {fileID: 2388970827098873285, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 771719045738535846, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
       propertyPath: m_Animations.Array.size
