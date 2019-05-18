@@ -10,7 +10,6 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     public GameObject slidePoint;
 
-    public AudioClip hitSound;
     public AudioClip jumpSound;
 
     private float direction = 0;
@@ -108,8 +107,5 @@ public class PlayerMovement : MonoBehaviour
         Vector3.Lerp(transform.position, slidePoint.transform.position, fracJourney);
     }
 
-    void OnCollisionEnter(Collision col)
-    {
-        source.PlayOneShot(hitSound,0.53f);
-    }
+   
 }

@@ -567,6 +567,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &801201150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801201148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55f60a4eef3f314499abe63c171da53b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashTime: 1
+  flashActive: 0
+  hitSound: {fileID: 8300000, guid: bb0380708a57493409d96cb162dae7fb, type: 3}
 --- !u!1 &874239880
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,7 +777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ae33dd6a8a569c43a015f474f10ed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 5
   gameOverText: {fileID: 1848283364}
   replayButton: {fileID: 1488991946}
   quitButton: {fileID: 1781170364}
