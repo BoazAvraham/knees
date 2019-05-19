@@ -579,7 +579,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55f60a4eef3f314499abe63c171da53b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flashTime: 1
+  flashTime: 0.2
   flashActive: 0
   hitSound: {fileID: 8300000, guid: bb0380708a57493409d96cb162dae7fb, type: 3}
 --- !u!1 &874239880
