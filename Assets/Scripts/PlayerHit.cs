@@ -30,19 +30,23 @@ public class PlayerHit : MonoBehaviour
         if (flashActive) {
             
             if (flashCounter > 0.66 * flashTime) {
-                workingColor.a = 0;
+                workingColor.g = 0;
+                workingColor.b = 0;
                 playerSprite.color = workingColor;
             }
             else if (flashCounter > 0.33 * flashTime) {
-                workingColor.a = 1;
+                workingColor.g = 1;
+                workingColor.b = 1;
                 playerSprite.color = workingColor;
             }
             else if (flashCounter > 0) {
-                workingColor.a = 0;
+                workingColor.g = 0;
+                workingColor.b = 0;
                 playerSprite.color = workingColor;
             }
             else {
-                workingColor.a = 1;
+                workingColor.g = 1;
+                workingColor.b = 1;
                 playerSprite.color = workingColor;
                 flashActive = false;
             }
