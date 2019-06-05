@@ -777,7 +777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ae33dd6a8a569c43a015f474f10ed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 1
   gameOverText: {fileID: 1848283364}
   replayButton: {fileID: 1488991946}
   quitButton: {fileID: 1781170364}

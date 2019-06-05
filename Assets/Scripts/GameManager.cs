@@ -55,13 +55,10 @@ public class GameManager : MonoBehaviour
 
         //score - distance ran
         score = 0;
-        scoreText.text = "Score : 0";
-
+        scoreText.text = "SCORE  -  " + (int)score;
         StartCoroutine(scoreUpdate());
 
         HealthUI.getInstance().updateHealthUI(health);
-        //Debug.Log("num of walls: " + walls.Count);
-        //Debug.Log("wall width:"+wallWidth);
     }
 
     private void createWallPool() {
@@ -111,7 +108,6 @@ public class GameManager : MonoBehaviour
     public void DecreasePlayerHealth(float damage) {
         health -= damage;
         HealthUI.getInstance().updateHealthUI(health);
-        Debug.Log(health);
         if (health == 0)
             GameOver();
     }
@@ -121,7 +117,9 @@ public class GameManager : MonoBehaviour
         gameOverText.enabled = true;
         replayButton.SetActive(true);
         quitButton.SetActive(true);
-        
+
+        PlayerPrefs.SetFloat("highscore", score);
+
         gameOverText.text = "Your knees were destroyed dude";
 
         //disable player and spwaning obstacles
