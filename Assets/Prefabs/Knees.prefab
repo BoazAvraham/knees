@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 1894241936250387078}
   - component: {fileID: 1894241936250387081}
   - component: {fileID: 2388970827098873285}
+  - component: {fileID: 5723672092185898336}
   m_Layer: 0
   m_Name: Knees
   m_TagString: Player
@@ -224,8 +225,8 @@ MonoBehaviour:
   - {fileID: 1922432315}
   - {fileID: 1444325910}
   m_Bounds:
-    m_Center: {x: 1.7395555, y: -0.31272542, z: 0}
-    m_Extent: {x: 1.8939813, y: 0.9386165, z: 0}
+    m_Center: {x: 1.5750185, y: 0.0658828, z: 0}
+    m_Extent: {x: 2.2772431, y: 1.0895385, z: 0}
 --- !u!114 &1894241936250387081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +242,7 @@ MonoBehaviour:
   speed: 10
   animator: {fileID: 0}
   slidePoint: {fileID: 0}
+  jumpSound: {fileID: 0}
 --- !u!95 &2388970827098873285
 Animator:
   serializedVersion: 3
@@ -260,3 +262,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5723672092185898336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894241937104543128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d8989b3e41a3dd43ad6b52d848f7e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

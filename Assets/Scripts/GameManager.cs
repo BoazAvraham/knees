@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
         replayButton.SetActive(true);
         quitButton.SetActive(true);
 
-        PlayerPrefs.SetFloat("highscore", score);
+        SetHighScore();
 
         gameOverText.text = "Your knees were destroyed dude";
 
@@ -126,5 +126,18 @@ public class GameManager : MonoBehaviour
         GameObject.FindWithTag("Player").SetActive(false);
         GetComponent<ObstacleSpawner>().StopAllCoroutines();
 
+    }
+
+    private void SetHighScore() {
+        PlayerPrefs.SetFloat("last_score", score);
+        if (PlayerPrefs.HasKey("highscore")) {
+            int s = (int)PlayerPrefs.GetFloat("highscore");
+            if (s < score)
+                PlayerPrefs.SetFloat("highscore", score);
+            Debug.Log(score);
+        }
+        else {
+            PlayerPrefs.SetFloat("highscore", score);
+        }
     }
 }
