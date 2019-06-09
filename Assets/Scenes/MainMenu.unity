@@ -583,7 +583,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 419120644}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 546756011}
+        m_MethodName: setHalfHairyLeg
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &419120644
@@ -922,9 +933,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07c842522f93f064c81f153940222902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smoothLeg: {fileID: 0}
-  halfHairLeg: {fileID: 0}
-  fullHairLeg: {fileID: 0}
+  smoothLeg: {fileID: 21300000, guid: a2affe997d2d2554c8228aa06966c9ff, type: 3}
+  halfHairLeg: {fileID: 21300000, guid: 48bae735709a2434889e0ae621d5b8e5, type: 3}
+  fullHairLeg: {fileID: 21300000, guid: e5d13b85d6a964e48ac5157ad4cac1da, type: 3}
 --- !u!1 &697005164
 GameObject:
   m_ObjectHideFlags: 0
@@ -5591,7 +5602,7 @@ GameObject:
   - component: {fileID: 1556635139}
   - component: {fileID: 1556635138}
   m_Layer: 5
-  m_Name: None
+  m_Name: Smooth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5655,7 +5666,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1556635139}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 546756011}
+        m_MethodName: setSmoothLeg
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1556635139
@@ -6438,7 +6460,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1895852028}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 546756011}
+        m_MethodName: setFullHairyLeg
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1895852028

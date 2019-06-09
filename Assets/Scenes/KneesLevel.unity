@@ -670,6 +670,7 @@ GameObject:
   - component: {fileID: 1070930503}
   - component: {fileID: 1070930504}
   - component: {fileID: 1070930505}
+  - component: {fileID: 1070930506}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -882,6 +883,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1070930506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070930499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07c842522f93f064c81f153940222902, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothLeg: {fileID: 21300000, guid: a2affe997d2d2554c8228aa06966c9ff, type: 3}
+  halfHairLeg: {fileID: 21300000, guid: 48bae735709a2434889e0ae621d5b8e5, type: 3}
+  fullHairLeg: {fileID: 21300000, guid: e5d13b85d6a964e48ac5157ad4cac1da, type: 3}
 --- !u!1 &1096716811
 GameObject:
   m_ObjectHideFlags: 0
@@ -2231,11 +2247,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knees
       objectReference: {fileID: 0}
-    - target: {fileID: 2388970827098873285, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1894241937104543133, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2409,6 +2420,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FlipY
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2388970827098873285, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4862623158728498049, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
