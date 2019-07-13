@@ -1,6 +1,6 @@
 Android
 PlayerPath?
-D:/UNITY/PROJECTS/Knees/knees8.aab
+D:/UNITY/PROJECTS/Knees/knees10.aab
 SceneListBegin?
 Assets/Scenes/MainMenu.unity
 Assets/Scenes/KneesLevel.unity
@@ -55,6 +55,7 @@ abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.Tou
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
 c1fc81318a42bc4150b89bac12efef5c Unity.2D.SpriteShape.Runtime.dll:UnityEngine.U2D.SpriteShapeController
 98ad81e9f689a492509f07e75b810aaa Unity.TextMeshPro.dll:TMPro.TMP_InputField
+5ca94e021ca052b7a123847df084c698 Assembly-CSharp.dll:.SkinSetting
 cf9f5cf2c3145a37ac07f00e50e460f9 UnityEngine.UI.dll:UnityEngine.UI.AspectRatioFitter
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.UI.dll:UnityEngine.EventSystems.BaseInput
 5fc094978ce3e3591a7500ed380d854a UnityEngine.UI.dll:UnityEngine.UI.Button
@@ -116,7 +117,7 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-80419f7899d6d6c857362313796d39d3 Assembly-CSharp.dll:.MainMenu
+0c95adf5595698d6bca58b8dbfce9465 Assembly-CSharp.dll:.MainMenu
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
 b21af3632b0aaa863cfe392d5fd7a5d3 Unity.2D.SpriteShape.Runtime.dll:UnityEngine.U2D.SpriteShape
@@ -169,7 +170,8 @@ d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.Spa
 691d09298d987a111aeb27931e7299f4 Assembly-CSharp.dll:.PauseMenu
 9c2ea08c2fd0eae3dff697f6b3d1671d Assembly-CSharp.dll:.ObstacleManager
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
-4057f56534bc54aa8e8f7ce0198695d5 Assembly-CSharp.dll:.PlayerMovement
+063f8c7ad5b3961ec2ff1e6030c78c6f Assembly-CSharp.dll:.PlayerMovement
+a0beb57fc79ae58206ccb48c619bd982 Assembly-CSharp.dll:.PlayerHit
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 8649814970b42d345b89944b862453cc Unity.TextMeshPro.dll:TMPro.TMP_SubMesh

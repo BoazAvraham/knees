@@ -757,14 +757,11 @@ MonoBehaviour:
   obstacles:
   - {fileID: 5283512336931011211, guid: 99e6a77b4b6304145a86d309bf80fcdf, type: 3}
   - {fileID: 5283512336931011211, guid: e895dc28289c9134bb7cce0179614a36, type: 3}
-  - {fileID: 5283512336931011211, guid: 1a539c77d2689b846bd931200f3f805c, type: 3}
+  - {fileID: 5283512336931011211, guid: 2eb7bd12a36928a40a0cf955a0698e97, type: 3}
   - {fileID: 5283512336931011211, guid: 7fbcec95065172e44b004e38e23101b9, type: 3}
   - {fileID: 5283512336931011211, guid: 140e5b9cc4342d0468802ffcb5a534fd, type: 3}
   - {fileID: 5283512336931011211, guid: e240a000421ad3840a252d40d885b916, type: 3}
-  - {fileID: 5283512336931011211, guid: 13a7abed0b5a1854e9f7862071a5d7d8, type: 3}
-  - {fileID: 5283512336931011211, guid: 20c9f29895d186447bd69803c47d5f0d, type: 3}
-  - {fileID: 5283512336931011211, guid: 3a910061ca2f4f24fbe62eb9e51f5d08, type: 3}
-  - {fileID: 5283512336931011211, guid: 2eb7bd12a36928a40a0cf955a0698e97, type: 3}
+  arrow: {fileID: 5283512336931011211, guid: dd608d5daed23be4ea04432290b34bf8, type: 3}
   timeBetweenSpawns: 3
 --- !u!114 &1070930504
 MonoBehaviour:
@@ -778,7 +775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ae33dd6a8a569c43a015f474f10ed4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
+  health: 3
   gameOverText: {fileID: 1848283364}
   replayButton: {fileID: 1488991946}
   quitButton: {fileID: 1781170364}
@@ -2247,6 +2244,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knees
       objectReference: {fileID: 0}
+    - target: {fileID: 2388970827098873285, guid: 0086d9f07f1d2b2489a72fcb242d9402,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1894241937104543133, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2420,11 +2422,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FlipY
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2388970827098873285, guid: 0086d9f07f1d2b2489a72fcb242d9402,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4862623158728498049, guid: 0086d9f07f1d2b2489a72fcb242d9402,
         type: 3}

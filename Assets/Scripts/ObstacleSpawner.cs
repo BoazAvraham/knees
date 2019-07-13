@@ -7,6 +7,7 @@ public class ObstacleSpawner : MonoBehaviour
 {
 
     public GameObject[] obstacles;
+    public GameObject arrow;
     public float timeBetweenSpawns=3;
 
 
@@ -24,9 +25,9 @@ public class ObstacleSpawner : MonoBehaviour
     }
 
     IEnumerator SpawnObstacle() {
-        
+        int count = 3;
+        float[] yPoss = { -yHight, -2 / 3 * yHight };
         while (true) {
-            float[] yPoss = { -yHight, -2/3 * yHight };
             yield return new WaitForSeconds(timeBetweenSpawns);
 
             int i = Random.Range(0, numOfObstacles);
@@ -34,8 +35,16 @@ public class ObstacleSpawner : MonoBehaviour
             pos.x += rightBoarder;
 
             pos.y = yPoss[Random.Range(0, 2)];
-            GameObject obst = Instantiate(obstacles[i], pos, Quaternion.identity);
 
+            count--;
+            if (count == 0) {
+                count = Random.Range(3, 6);
+                pos.y = yPoss[1];
+                GameObject obst = Instantiate(arrow, pos , Quaternion.AngleAxis(90,Vector3.forward));
+                obst.GetComponent<Rigidbody>().AddForce(Vector3.left * 500);
+            }
+            else
+                Instantiate(obstacles[i], pos, Quaternion.identity);
         }
     }
 
