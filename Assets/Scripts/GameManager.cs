@@ -11,8 +11,9 @@ public class GameManager : MonoBehaviour
 
     public float health;
     public Text gameOverText;
+    public GameObject replayButton;
+    public GameObject quitButton;
     public Text scoreText;
-    public Text healthText;
 
     public GameObject background;
     public float screenspeed = 10;
@@ -22,6 +23,10 @@ public class GameManager : MonoBehaviour
     private List<GameObject> walls;
     private Vector3 wallMovement;
     private Vector3 wallWidth;
+
+    public static GameManager getInstance() {
+        return instance;
+    }
 
     void Awake()
     {
@@ -50,10 +55,10 @@ public class GameManager : MonoBehaviour
 
         //score - distance ran
         score = 0;
-        scoreText.text = "Score : 0";
+        scoreText.text = "SCORE  -  " + (int)score;
+        StartCoroutine(scoreUpdate());
 
-        Debug.Log("num of walls: " + walls.Count);
-        Debug.Log("wall width:"+wallWidth);
+        HealthUI.getInstance().updateHealthUI(health);
     }
 
     private void createWallPool() {
@@ -64,6 +69,15 @@ public class GameManager : MonoBehaviour
         walls.Add(Instantiate(background,pos,Quaternion.identity));
         pos -= 2 * wallWidth;
         walls.Add(Instantiate(background,pos,Quaternion.identity));
+        
+    }
+
+    IEnumerator scoreUpdate() {
+        while (true) {
+            score += wallMovement.x * Time.deltaTime;
+            scoreText.text = "SCORE  -  " + (int)score;
+            yield return new WaitForSeconds(0);
+        }
     }
 
     void FixedUpdate() {
@@ -78,9 +92,6 @@ public class GameManager : MonoBehaviour
                 o.GetComponent<Wall>().RandomizeText();
             }
         }
-
-        score+= wallMovement.x * Time.deltaTime;
-        scoreText.text = "SCORE  -  " +(int)score;
     }
 
 
@@ -96,19 +107,37 @@ public class GameManager : MonoBehaviour
     
     public void DecreasePlayerHealth(float damage) {
         health -= damage;
-        Debug.Log(health);
+        HealthUI.getInstance().updateHealthUI(health);
         if (health == 0)
             GameOver();
     }
 
     private void GameOver() {
+        StopAllCoroutines();
         gameOverText.enabled = true;
-        
+        replayButton.SetActive(true);
+        quitButton.SetActive(true);
+
+        SetHighScore();
+
         gameOverText.text = "Your knees were destroyed dude";
 
         //disable player and spwaning obstacles
         GameObject.FindWithTag("Player").SetActive(false);
         GetComponent<ObstacleSpawner>().StopAllCoroutines();
 
+    }
+
+    private void SetHighScore() {
+        PlayerPrefs.SetFloat("last_score", score);
+        if (PlayerPrefs.HasKey("highscore")) {
+            int s = (int)PlayerPrefs.GetFloat("highscore");
+            if (s < score)
+                PlayerPrefs.SetFloat("highscore", score);
+            Debug.Log(score);
+        }
+        else {
+            PlayerPrefs.SetFloat("highscore", score);
+        }
     }
 }

@@ -17,6 +17,7 @@ public class Wall : MonoBehaviour
     void Start()
     {
         textChild = transform.GetChild(2);
+        RandomizeText();
     }
 
     public void RandomizeText() {
