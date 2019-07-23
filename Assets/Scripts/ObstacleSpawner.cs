@@ -9,7 +9,7 @@ public class ObstacleSpawner : MonoBehaviour
     public GameObject[] obstacles;
     public GameObject arrow;
     public float timeBetweenSpawns=3;
-
+    public float arrowSpeed=300;
 
     private int numOfObstacles;
     private float rightBoarder=0; //TODO find this in start depends on camera
@@ -41,7 +41,7 @@ public class ObstacleSpawner : MonoBehaviour
                 count = Random.Range(3, 6);
                 pos.y = yPoss[1];
                 GameObject obst = Instantiate(arrow, pos , Quaternion.AngleAxis(90,Vector3.forward));
-                obst.GetComponent<Rigidbody>().AddForce(Vector3.left * 500);
+                obst.GetComponent<Rigidbody>().AddForce(Vector3.left * arrowSpeed);
             }
             else
                 Instantiate(obstacles[i], pos, Quaternion.identity);
